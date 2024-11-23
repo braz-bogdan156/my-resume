@@ -165,3 +165,29 @@ font-size: 14px;
 line-height: 171%;
 color: #595959;
 }
+
+@media(min-width: 320px) and (max-width: 768px){
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        width: 100%;
+    }
+
+    .sidebar-image{
+        width: 100%;
+    }
+
+   
+    .main-content {
+        order: 2;
+        padding: 40px 20px;
+        width: 100%;
+    }
+}
